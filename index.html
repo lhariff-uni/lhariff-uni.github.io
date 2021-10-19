@@ -1,0 +1,23 @@
+---
+example_text: "Example Text"
+---
+
+<h3>{{ "code highlights" | capitalize }}</h3>
+{% highlight python linenos %}
+def bubble_sort(items):
+    """ Implementation of bubble sort """
+    for i in range(len(items)):
+        for j in range(len(items)-1-i):
+            if items[j] > items[j+1]:
+                # Swap!
+                items[j], items[j+1] = items[j+1], items[j]
+{% endhighlight %}
+
+
+<h3>{{ "Tag Example" | upcase }}</h3>
+    {% for i in (1..5) %}
+    {{page.example_text | append: "(" | append: i | append: ")" }}
+    <br>
+    {% endfor %}
+  </body>
+</html>
