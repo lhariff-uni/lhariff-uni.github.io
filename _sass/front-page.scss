@@ -1,12 +1,12 @@
 .front-label {
   font-weight:700;
-  font-size: 24vmax;
+  font-size: 20vw;
   opacity: 0.5;
   padding: 0;
   margin: 0;
   user-select: none;
   width: inherit;
-  height: inherit;
+  height: auto;
 }
 .front-label:hover {
   opacity: 1.0;
@@ -15,4 +15,5 @@
 .wip-notice {
   color: $warning-color;
   font-weight:500;
+  font-size: 1vw;
 }
