@@ -1,4 +1,20 @@
 ---
 ---
+@import "materialize/materialize";
 @import "main";
-@import "code-highlight"
+@import "front-page";
+@import "code-highlight";
+
+html {
+  font-family: 'Roboto';
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.main-theme {
+  background-color: $primary-color;
+}
+
+.current {
+  color: $navbar-font-color;
+}
