@@ -1,23 +1,52 @@
 ---
-example_text: "Example Text"
 ---
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-<h3>{{ "code highlights" | capitalize }}</h3>
-{% highlight python linenos %}
-def bubble_sort(items):
-    """ Implementation of bubble sort """
-    for i in range(len(items)):
-        for j in range(len(items)-1-i):
-            if items[j] > items[j+1]:
-                # Swap!
-                items[j], items[j+1] = items[j+1], items[j]
-{% endhighlight %}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
 
 
-<h3>{{ "Tag Example" | upcase }}</h3>
-    {% for i in (1..5) %}
-    {{page.example_text | append: "(" | append: i | append: ")" }}
-    <br>
-    {% endfor %}
+    <link rel="stylesheet" href="/assets/css/styles.css" media="screen,projection" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <title>{{ page.path }}</title>
+
+
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
+    <script type="text/javascript" src="assets/js/materialize/bin/materialize.min.js" defer></script>
+    <script type="text/javascript" src="assets/js/scripts.js" defer></script>
+  </head>
+  <body class="main-theme">
+    <div id="front-carousel" class="wip-notice container center-align">
+      // This site is a work-in-progress.
+    </div>
+    <div class="left-align" style="width:100vmax">
+      <h1 class="front-label" style="opacity: 0.5;">LQMN/</h1>
+    </div>
+
+    <div class="carousel carousel-slider center">
+      <div class="carousel-item red white-text" href="#one!">
+        <h1 class="front-label">portfolio</h1>
+      </div>
+      <div class="carousel-item amber white-text" href="#two!">
+        <h1 class="front-label">contact</h1>
+      </div>
+      <div class="carousel-item green white-text" href="#three!">
+        <h1 class="front-label">bio</h1>
+      </div>
+      <div class="carousel-item blue white-text" href="#four!">
+      <h1 class="front-label">cv</h1>
+      </div>
+    </div>
+
   </body>
 </html>

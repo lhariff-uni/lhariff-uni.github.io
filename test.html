@@ -1,0 +1,41 @@
+---
+example_text: "Example Text"
+---
+<h3 style="font-family: 'Roboto', sans-serif" class="animate__animated animate__fadeInDown">{{ "code highlights" | capitalize }}</h3>
+{% highlight python linenos %}
+def bubble_sort(items):
+    """ Implementation of bubble sort """
+    for i in range(len(items)):
+        for j in range(len(items)-1-i):
+            if items[j] > items[j+1]:
+                # Swap!
+                items[j], items[j+1] = items[j+1], items[j]
+{% endhighlight %}
+
+<div id="on-open-anim" class="container">
+  <div class="row center-align">
+    <div class="col s12 center-align">
+      <a class="waves-effect waves-light custom-large-button scale-transition scale-out">previous projects</a>
+    </div>
+  </div>
+  <div class="row center-align">
+    <div class="col s12 center-align">
+      <a class="waves-effect waves-light custom-large-button scale-transition scale-out">resume/cv</a>
+    </div>
+  </div>
+  <div class="row center-align">
+    <div class="col s6 right-align">
+      <a class="waves-effect waves-light custom-large-button scale-transition scale-out">about me</a>
+    </div>
+    <div class="col s6 left-align">
+      <a class="waves-effect waves-light custom-large-button scale-transition scale-out">contact</a>
+    </div>
+  </div>
+</div>
+
+
+<h3>{{ "Tag Example" | upcase }}</h3>
+{% for i in (1..5) %}
+  {{page.example_text | append: "(" | append: i | append: ")" }}
+  <br>
+{% endfor %}
