@@ -1,4 +1,3 @@
-let carousel_instance = null;
 const carousel_delay = 125;
 let carousel_size = 0;
 

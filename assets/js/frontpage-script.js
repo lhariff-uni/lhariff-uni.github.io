@@ -1,3 +1,4 @@
+let carousel_instance = null;
 // Load and execute Carousel script
 $.getScript( "assets/js/carousel.js" )
   .done(function( script, textStatus ) {
@@ -6,6 +7,27 @@ $.getScript( "assets/js/carousel.js" )
   .fail(function( jqxhr, settings, exception ) {
     console.error("fail: load carousel.js script");
 });
+
+$(document).keyup(e => {
+  switch (e.keyCode) {
+     case 40: // down
+          break;
+     case 38: // up
+          break;
+     case 37: // left
+           carousel_instance.prev();
+           break;
+     case 39: // right
+           carousel_instance.next();
+           break;
+     case 13: // enter
+          $(".front-label").click(); // fires multiple times bc there are multiple front labels
+          break;
+     default:
+         console.log(e.keyCode);
+         }
+});
+
 
 $(".front-label").on('click', function(event){
     event.stopPropagation();

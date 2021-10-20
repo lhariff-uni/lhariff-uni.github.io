@@ -106,12 +106,13 @@ nav {
     height: inherit;
     line-height: inherit;
     margin: 0;
-    color: $navbar-font-color;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 32px;
     padding: 0px 0;
     margin-left: 20px;
+    color: black;
+    opacity: .5;
     //background-color: red;
   }
 
