@@ -14,9 +14,9 @@ nav {
   }
 
   color: $navbar-font-color;
-  @extend .z-depth-1;
-  //background-color: color("shades","transparent");
-  background-color: #FEFBF3;
+  //@extend .z-depth-1;
+  background-color: color("shades","transparent");
+  //background-color: #FEFBF3;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-line-height-mobile;

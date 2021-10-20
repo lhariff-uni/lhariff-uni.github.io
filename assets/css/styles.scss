@@ -15,6 +15,10 @@ html {
   background-color: $primary-color;
 }
 
-.current {
-  color: $navbar-font-color;
+.nav-icon{
+  color: black;
+  opacity: 0.5;
+  .nav-selected {
+    opacity: 1;
+  }
 }
