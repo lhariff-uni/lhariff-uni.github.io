@@ -2,49 +2,13 @@
 ---
 @import "materialize/materialize";
 @import "main";
+@import "front-page";
 @import "code-highlight";
-
-.front-label {
-  font-weight:700;
-  font-size: 24vmax;
-  opacity: 0.5;
-  padding: 0;
-  margin: 0;
-  user-select: none;
-  width: inherit;
-  height: inherit;
-}
-.front-label:hover {
-  opacity: 1.0;
-}
-
-/* set to !important to override Materialize stylesheet */
-
-.carousel {
-  height: 50vmin !important;
-}
-
-/* set to flexbox to center the images with the indicator icons */
-.carousel-item {
-  display: flex;
-  align-items: start;
-  justify-content: center;
-}
-
-.carousel-item img {
-  width: auto !important;
-  height: inherit !important;
-}
 
 html {
   font-family: 'Roboto';
   font-weight: 400;
   overflow: hidden;
-}
-
-.wip-notice {
-  color: $warning-color;
-  font-weight:500;
 }
 
 .main-theme {
