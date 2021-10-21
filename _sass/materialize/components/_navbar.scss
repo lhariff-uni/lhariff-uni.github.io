@@ -14,9 +14,9 @@ nav {
   }
 
   color: $navbar-font-color;
-  @extend .z-depth-1;
-  //background-color: color("shades","transparent");
-  background-color: #FEFBF3;
+  //@extend .z-depth-1;
+  background-color: color("shades","transparent");
+  //background-color: #FEFBF3;
   width: 100%;
   height: $navbar-height-mobile;
   line-height: $navbar-line-height-mobile;
@@ -106,12 +106,13 @@ nav {
     height: inherit;
     line-height: inherit;
     margin: 0;
-    color: $navbar-font-color;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 32px;
     padding: 0px 0;
     margin-left: 20px;
+    color: black;
+    opacity: .5;
     //background-color: red;
   }
 

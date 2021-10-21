@@ -1,20 +1,23 @@
-<nav>
-    <div class="nav-wrapper">
-      <h1 class="nav-title">
-        Luqman Ariffin
-      </h1>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        {% for item in site.data.navigation %}
-          <li>
-            <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-              {% if page.url == item.link %}
-                {{ item.name | prepend: ">" | append: "<" }}
-              {% else %}
-                {{ item.name }}
-              {% endif %}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </nav>
+<nav class="front-nav">
+  <div class="nav-wrapper">
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li><a href="portfolio.html"><i class="material-icons nav-icon">inventory</i></a></li>
+      <li><a href="contact.html"><i class="material-icons nav-icon">contact_mail</i></a></li>
+      <li><a href="about-me.html"><i class="material-icons nav-icon">face</i></a></li>
+      <li><a href="files.html"><i class="material-icons nav-icon">description</i></a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- navbar with item names
+{% for item in site.data.navigation %}
+  <li>
+    <a href="{{ item.link }}" {% if page.url == item.link %}class="nav-selected"{% endif %}>
+      {% if page.url == item.link %}
+        {{ item.name | prepend: ">" | append: "<" }}
+      {% else %}
+        {{ item.name }}
+      {% endif %}
+    </a>
+  </li>
+{% endfor %} -->

@@ -5,16 +5,38 @@
 @import "front-page";
 @import "code-highlight";
 
+@import "about-me";
+
 html {
   font-family: 'Roboto';
   font-weight: 400;
-  overflow: hidden;
 }
 
 .main-theme {
   background-color: $primary-color;
 }
 
-.current {
-  color: $navbar-font-color;
+.nav-icon {
+  color: black;
+  opacity: 0.5;
+  .nav-selected {
+    opacity: 1;
+  }
+}
+
+.nav-title {
+  display: inline-block;
+  height: $navbar-height-mobile;
+  line-height: inherit;
+  margin: 0;
+  font-family: 'Roboto';
+  font-weight: 900;
+  font-size: 2.3vw;
+  padding: 0px 0;
+  margin-top: 8px;
+  color: black;
+  opacity: .5;
+}
+.nav-title:hover {
+  opacity:.8;
 }
