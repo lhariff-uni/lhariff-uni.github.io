@@ -21,3 +21,21 @@
   font-weight:500;
   font-size: 1vw;
 }
+
+/* set to !important to override Materialize stylesheet */
+.carousel {
+  height: 50vmin !important;
+  width: 100vw !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+/* set to flexbox to center the images with the indicator icons */
+.carousel-item {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+.carousel-item img {
+  width: auto !important;
+  height: inherit !important;
+}
