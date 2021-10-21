@@ -38,15 +38,19 @@ $(".front-label").on('click', function(event){
     switch($('.carousel').data("index")){
       case 0:
         console.log("portfolio");
+        window.location.href = 'portfolio.html';
         break;
       case 1:
         console.log("contact");
+        window.location.href = 'contact.html';
         break;
       case 2:
         console.log("bio");
+        window.location.href = 'about-me.html';
         break;
       case 3:
         console.log("cv");
+        window.location.href = 'files.html';
         break;
     }
 });
