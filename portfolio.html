@@ -9,6 +9,24 @@
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">school</i>University Work</div>
-    <div class="collapsible-body"><span>To be added.</span></div>
+    <div class="collapsible-body">
+
+      <div class="row">
+        {% for project in site.projects %}
+        <div class="col s6 m3">
+          <div class="card small">
+            <div class="card-image">
+                 <img src="assets/images/intro.png">
+                 <span class="card-title"> {{project.title}} </span>
+               </div>
+               <div class="card-content">
+                 <p> {{project.excerpt}} </p>
+               </div>
+         </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
   </li>
 </ul>
