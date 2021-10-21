@@ -2,7 +2,7 @@
   {% assign filtered_projects = site.projects | where_exp: 'item', "item.tags contains 'feature'" %}
   {% for project in filtered_projects %}
   <div class="col s12 m6">
-    <div class="card small">
+    <div class="card small" url="{{project.url}}">
       <div class="card-image">
            <img src={{project.banner}}>
            <span class="card-title"> {{project.title}} </span>

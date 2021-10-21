@@ -7,9 +7,3 @@ $(document).ready(function(){
       accordion: false
     });
   });
-
-  $(".card").on('click', function(event){
-    console.log("card click");
-    console.log($(this).attr('url'));
-    window.location.href = $(this).attr('url');
-  });

@@ -12,7 +12,8 @@
     <div class="collapsible-body">
 
       <div class="row">
-        {% for project in site.projects %}
+        {% assign filtered_projects = site.projects | where_exp: 'item', "item.tags contains 'university'" %}
+        {% for project in filtered_projects %}
         <div class="col s6 m3">
           <div class="card small">
             <div class="card-image">
@@ -30,3 +31,5 @@
     </div>
   </li>
 </ul>
+
+<script type="text/javascript" src="assets/js/portfolio.js" defer></script>
