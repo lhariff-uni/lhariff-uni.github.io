@@ -1,8 +1,17 @@
+collections:
+  projects:
+    output: true
+
 defaults:
   - scope:
       path: "index.html"
     values:
       layout: ""
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
   - scope:
       path: ""
     values:

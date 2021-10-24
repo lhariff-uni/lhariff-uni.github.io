@@ -11,6 +11,17 @@ html {
   font-family: 'Roboto';
   font-weight: 400;
 }
+table {
+  border-collapse: collapse;
+}
+th {
+  text-align: center;
+  width: 50%;
+}
+td {
+  text-align: left;
+  width: 50%;
+}
 
 .main-theme {
   background-color: $primary-color;

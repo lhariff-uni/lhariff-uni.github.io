@@ -1,2 +1,35 @@
 ---
 ---
+<ul class="collapsible popout">
+  <li class="active">
+    <div class="collapsible-header"><i class="material-icons">star</i>Featured</div>
+    <div class="collapsible-body">
+      {% include featured-work.html %}
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">school</i>University Work</div>
+    <div class="collapsible-body">
+
+      <div class="row">
+        {% assign filtered_projects = site.projects | where_exp: 'item', "item.tags contains 'university'" %}
+        {% for project in filtered_projects %}
+        <div class="col s6 m3">
+          <div class="card small">
+            <div class="card-image">
+                 <img src="assets/images/intro.png">
+                 <span class="card-title"> {{project.title}} </span>
+               </div>
+               <div class="card-content">
+                 <p> {{project.excerpt}} </p>
+               </div>
+         </div>
+        </div>
+        {% endfor %}
+      </div>
+
+    </div>
+  </li>
+</ul>
+
+<script type="text/javascript" src="assets/js/portfolio.js" defer></script>

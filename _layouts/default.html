@@ -20,14 +20,16 @@
 
     <title>{{ page.path }}</title>
 
-    <script type="text/javascript" src="assets/js/materialize/bin/materialize.min.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+    <script type="text/javascript" src="/assets/js/materialize/bin/materialize.min.js" defer></script>
+    <script src="https://kit.fontawesome.com/4b6fc0dd9f.js" crossorigin="anonymous"></script>
   </head>
   <body class="main-theme">
 
     {% include navigation.html %}
-    <a style="margin-left: 20px;" id="" href="index.html" class="nav-title">lqmn/</a>
-    <a style="" id="" href="##" class="nav-title">{{page.path}}</a>
+    <a style="margin-left: 20px;" id="" href="/index.html" class="nav-title">lqmn/</a>
+    <p class="nav-title" style="opacity:.5;">{{page.path}}</p>
+    <!--<a style="" id="" href="##" class="nav-title">{{page.path}}</a>-->
 
     {{content}}
   </body>
