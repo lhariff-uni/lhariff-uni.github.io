@@ -42,7 +42,7 @@ $(".front-label").on('click', function(event){
         break;
       case 1:
         console.log("contact");
-        window.location.href = 'contact.html';
+        window.location.href = 'about-me.html#contact';
         break;
       case 2:
         console.log("bio");

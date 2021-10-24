@@ -1,4 +1,10 @@
 $(document).ready(function(){
+    if(window.location.hash == "#contact") {
+      $('#contact').addClass("active");
+    } else {
+      $('#intro').addClass("active");
+    }
+
     $('.collapsible').collapsible({
       inDuration: 200,
       outDuration:100
@@ -6,4 +12,5 @@ $(document).ready(function(){
     $('.collapsible.expandable').collapsible({
       accordion: false
     });
+
   });
